@@ -19,8 +19,8 @@
 
      /* Accent */
 
-    --Cyan-inside-call-to-action-gradient: hsl(176, 68%, 64%);
-    --Blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);
+    --Cyan-inside-call-to-action-gradient: #65e2d9;
+    --Blue-inside-call-to-action-gradient: #339ecc;
 
      /* Neutral */
 
@@ -32,10 +32,17 @@
     background-repeat: no-repeat; */
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .header{
-    background-color: red;
-    display: flex;
+/*     background-color: red;
+ */   
+    background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+     display: flex;
     align-items: center;
     align-content: center;
     width: 100%;
@@ -49,8 +56,8 @@
 .header>img{/* logo */
 }
 .menu__items{
-    background-color: blue;
-    display: inline-block;
+/*     background-color: blue;
+ */    display: inline-block;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,25 +71,70 @@
 }
 
 .content{
-    max-width: 100vw;
-    width: 100%;
-    height: 100vh;
-}
-
-/* .content__intro-container{
-    background-image: url(images/bg-curvy-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
-
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    align-self: center;
 }
+
+.content__intro-container{
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom;
+/*     background-position-y: 50%;
+ */    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+}
+.content__intro-container>*{
+    margin: 0.5em 0;
+}
+
 .intro-container__img{
     width: 75%;
-    
-} */
+    object-fit: contain;
+}
+
+.intro-container__tittle{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--White);
+    text-align: center;
+    width: 75%;
+}
+
+.intro-container__body{
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: var(--White);
+    text-align: center;
+}
+
+.intro-container__button-start{
+    height: 2.5em;
+    width: 12em;
+
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--White);
+
+    border-style: none;
+    border-radius: 3em;
+
+/*     background-color: red;
+ */    background: radial-gradient(circle, rgba(51,158,204,1) 0%, rgba(101,226,217,1) 100%);
+
+}
+
+.content__bottom-container{
+    background-color: var(--Dark-Blue-main-background);
+    width: 100%;
+}
 @media screen and (max-width:499px){
     .header{
         justify-content: space-around;
@@ -94,17 +146,47 @@
     .menu__items{    
         min-width: 45%;
     }
+    .content{
+        max-width: 360px;
+        width: 100%;
+    }
+    .content__intro-container{
+        width: 100%;
+        padding-top: 1em;
+        background-image: url(images/bg-curvy-mobile.svg);
+
+    }
+
+    .intro-container__tittle{    
+        font-size: 21px;
+    }
+    .intro-container__body{    
+        font-size: 14px;
+        width: 79%;
+
+    }
+    .intro-container__button-start{
+        max-width: 70%;
+
+    }
+
+    .intro-container__body>*{    
+        display: inline;
+    }
 
 }
 
 @media screen and (min-width:500px){
     .header{
         justify-content: space-between; 
-        height: 6em;       
+        max-height: max-content;       
+        height: max-content;
     }
     .header>img{/* logo */
-        max-height: 2.5em;
+        max-height: 100%;
         margin-left: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     .menu__items{
         margin-right: 2em;
@@ -112,6 +194,32 @@
         width: 15em;
         max-width: 16em;
     }
+    .menu__item-link{
+        font-size: 18px;
+    }  
+    .content{
+        max-width: 1440px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
 
+    .content__intro-container{
+        width: 100%;
+        background-image: url(images/bg-curvy-desktop.svg);
+
+    }
+    .intro-container__tittle{    
+        font-size: 3.5vw;
+    }
+    .intro-container__body{    
+        font-size: 1.6vw;
+    }
+
+    .intro-container__button-start{
+        font-size: 1.8vw;
+    }
 
 }
