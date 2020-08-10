@@ -95,7 +95,6 @@ body{
 }
 
 .intro-container__img{
-    width: 75%;
     object-fit: contain;
 }
 
@@ -259,7 +258,9 @@ body{
         padding-top: 1em;
         background-image: url(images/bg-curvy-mobile.svg);
     }
-
+    .intro-container__img{
+        width: 80%;
+    }
     .intro-container__tittle{    
         font-size: 21px;
     }
@@ -337,6 +338,9 @@ body{
         width: 100%;
         background-image: url(images/bg-curvy-desktop.svg);
 
+    }
+    .intro-container__img{
+        width: 50%;
     }
     .intro-container__tittle{    
         font-size: 3.5vw;
