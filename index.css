@@ -25,6 +25,7 @@
      /* Neutral */
 
     --White: hsl(0, 0%, 100%);
+    --White-body: hsl(0, 0%, 80%);
 
     background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
 /*
@@ -110,7 +111,7 @@ body{
     width: 60%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: var(--White);
+    color: var(--White-body);
     text-align: center;
 }
 
@@ -180,7 +181,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-style: 14px;
-    color: var(--lirycs-secondary);
+    color: var(--White-body);
 }
 
 .content__stay-productive-container{
@@ -214,7 +215,7 @@ body{
     width: 80%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: var(--White);
+    color: var(--White-body);
     text-align: start;
 
 }
@@ -222,7 +223,7 @@ body{
     width: 80%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: var(--White);
+    color: var(--White-body);
     text-align: start;
 
 }
