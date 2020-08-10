@@ -239,6 +239,78 @@ body{
     text-decoration-line: underline;
 }
 
+.content__users-reviews{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,320px));
+    justify-content: center;
+    align-content: center;
+
+    justify-items: center;
+    align-items: center;
+    width: 75%;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.user-review{
+    border-radius: 0.5em;
+    background-color: var(--Dark-Blue-testimonials-background);
+    height: 260px;  
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+}
+.body-review{
+    color: var(--White-body);
+    font-size: 100%;
+    text-align: justify;
+/*     background-color: red;
+ */    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: var(--White-body);
+    flex-grow: 0.5;
+    line-height: 1.8em;
+    padding: 2em 2em 0em 2em;
+}
+/* boton box review */
+.user-review__user-perfil{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-grow: 1.5;
+    justify-content: start;
+    padding-left: 2em;
+}
+
+.user-perfil__photo{
+    width: 2em;
+    clip-path: circle(50% at 50% 50%);
+    margin-right: 1em;
+}
+
+.user-perfil__about{
+}
+
+.about__name{
+    width: 80%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--White);
+    font-size: 14px;
+    width: 100%;
+
+}
+
+.about__position{
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: var(--White-body);
+    text-align: start;
+    font-size: 14px;
+    width: 100%;
+}
+
 @media screen and (max-width:499px){
     .header{
         justify-content: space-around;
