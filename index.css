@@ -139,6 +139,11 @@ body{
     align-items: center;
 
 }
+.content__bottom-container>*{
+
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
 
 .content__features-container{
     display: grid;
@@ -241,13 +246,12 @@ body{
 
 .content__users-reviews{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,320px));
     justify-content: center;
     align-content: center;
 
     justify-items: center;
     align-items: center;
-    width: 75%;
+    width: 90%;
     column-gap: 1em;
     row-gap: 1em;
 }
@@ -275,11 +279,11 @@ body{
 /* boton box review */
 .user-review__user-perfil{
     display: flex;
-    width: 100%;
+    width: max-content;
     align-items: center;
     flex-grow: 1.5;
     justify-content: start;
-    padding-left: 2em;
+    margin-left: 2em;
 }
 
 .user-perfil__photo{
@@ -372,6 +376,9 @@ body{
     .description__link{
         font-style: 12px;
     }
+    .content__users-reviews{   
+        grid-template-columns: repeat(auto-fit,minmax(320px,320px));
+    }
 
 
 }
@@ -449,6 +456,8 @@ body{
     .description__link{
         font-style: 14px;
     }
-    
+    .content__users-reviews{   
+        grid-template-columns: repeat(auto-fit,minmax(320px,400px));
+    }
 
 }
