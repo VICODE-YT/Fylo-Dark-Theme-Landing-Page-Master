@@ -12,8 +12,7 @@ This is just a LandingPage without JavaScript implementation.
 
 - Some complex CSS  Grid and flexbox uses.
 - Combining such layouts (Grid and flexbox).
-- Breackpoints use.
-- Responsive design.
+- Breakpoints use for responsive design.
 - Use colors and fonts given by a design image.
 
 
