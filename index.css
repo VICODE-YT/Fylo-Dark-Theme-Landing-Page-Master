@@ -322,6 +322,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 .early-acces__color-top{
     height: 50%;
